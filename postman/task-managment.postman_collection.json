@@ -1,0 +1,1279 @@
+{
+	"info": {
+		"_postman_id": "15075331-2992-4698-9309-f51d2c274b64",
+		"name": "task-managment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38866134"
+	},
+	"item": [
+		{
+			"name": "get Token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "task-manager-api-client",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "danianouro",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "dania",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/realms/task-manager-api/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"realms",
+						"task-manager-api",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get Token user_1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "task-manager-api-client",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "danianouro",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "dania",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/realms/task-manager-api/protocol/openid-connect/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"realms",
+								"task-manager-api",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-length",
+							"value": "2380"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNOV9EdDcwYW1ycVZzSVZZWC1ndWw0eXBha2w2MmJSUEN1ZEJXdWRIRk5jIn0.eyJleHAiOjE3NDcwNTE1ODksImlhdCI6MTc0NzA1MTI4OSwianRpIjoib25ydHJvOmZlYWJiMWFmLWQ5ZjMtNDBkYS04ODhkLWY0ZGYxNDIwOGUwOSIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9yZWFsbXMvdGFzay1tYW5hZ2VyLWFwaSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkYjY4NmNlYS0xYzM3LTQzNTktYTY4Ni01YjgzYjE5YjZiZTAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJ0YXNrLW1hbmFnZXItYXBpLWNsaWVudCIsInNpZCI6IjNlZDc5MzcwLWIwN2UtNGQ0NS05ZDA5LWRkZTc1YjVjYjBiOSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXRhc2stbWFuYWdlci1hcGkiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsidGFzay1tYW5hZ2VyLWFwaS1jbGllbnQiOnsicm9sZXMiOlsiY2xpZW50LXVzZXIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkRhbmlhIE5vdXJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiZGFuaWFub3VybyIsImdpdmVuX25hbWUiOiJEYW5pYSIsImZhbWlseV9uYW1lIjoiTm91cm8iLCJlbWFpbCI6Im5vdXJvZGFuaWFAZ21haWwuY29tIn0.NC7eBjbRYe1SmR4CcJ6iCxbvlYe7x5KBR35DW5FskL8-izEgjWAvl8hJwrZlmuxWGE6ytYlB4G2PpLFN_3EZTFj2TxLeIPXZlyrfG1Perqj03rmt-ABVKco67EQ9Rv3AtXxK4IWPe_4XmIXtIo2qUsk1kpyBYCz0CIe14ZwajDH40PmD_f8JAqzt31LqzWufjatb-YpHEV_sAWJK4EUTAfh9M-xcnOvs3nCEmhk5CfYvSjhuBgYzML6vkwVPU2-nkYzD5UOOSUelTY84TdF4RTibiers7Mr4OO3Yt_oxh6s29dIWdJYbCKpN9ca-rJ6ZNG76QnF91bny1aI77jQVPA\",\n    \"expires_in\": 300,\n    \"refresh_expires_in\": 1800,\n    \"refresh_token\": \"eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJmZGVlMWNmMS1mYzg1LTRiMDQtYTU4Mi0yODFlYzc0YTFhM2UifQ.eyJleHAiOjE3NDcwNTMwODksImlhdCI6MTc0NzA1MTI4OSwianRpIjoiNmU3MjIzM2UtZTFhYi00YWFkLTg2N2QtOGEyZTBiYTc4NjIxIiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy90YXNrLW1hbmFnZXItYXBpIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy90YXNrLW1hbmFnZXItYXBpIiwic3ViIjoiZGI2ODZjZWEtMWMzNy00MzU5LWE2ODYtNWI4M2IxOWI2YmUwIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InRhc2stbWFuYWdlci1hcGktY2xpZW50Iiwic2lkIjoiM2VkNzkzNzAtYjA3ZS00ZDQ1LTlkMDktZGRlNzViNWNiMGI5Iiwic2NvcGUiOiJiYXNpYyBwcm9maWxlIGVtYWlsIGFjciByb2xlcyB3ZWItb3JpZ2lucyJ9.D8azBYzJ2vfeCdUM8daiFl8BfYRTfy70wawpeZVrVG_OBfXo5vA3dNGCaQlFPhDKffJCqqQs6bYq3hIx81br2Q\",\n    \"token_type\": \"Bearer\",\n    \"not-before-policy\": 0,\n    \"session_state\": \"3ed79370-b07e-4d45-9d09-dde75b5cb0b9\",\n    \"scope\": \"profile email\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get Token user_2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "client_id",
+							"value": "task-manager-api-client",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "jood",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "jood",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/realms/task-manager-api/protocol/openid-connect/token",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"realms",
+						"task-manager-api",
+						"protocol",
+						"openid-connect",
+						"token"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get Token user_2",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "task-manager-api-client",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "jood",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "jood",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8080/realms/task-manager-api/protocol/openid-connect/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"realms",
+								"task-manager-api",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "no-store"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "content-length",
+							"value": "2376"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=31536000; includeSubDomains"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"access_token\": \"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNOV9EdDcwYW1ycVZzSVZZWC1ndWw0eXBha2w2MmJSUEN1ZEJXdWRIRk5jIn0.eyJleHAiOjE3NDcwNTIwODIsImlhdCI6MTc0NzA1MTc4MiwianRpIjoib25ydHJvOjNjMDgzMGEyLTAzYmMtNGRmNy1iZjZkLWRiZTRhMTYxZTYxOSIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9yZWFsbXMvdGFzay1tYW5hZ2VyLWFwaSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiIxMDhjMDI2Mi0zZGRmLTRjMjMtYTU2Zi1lNzM5NjJlNTU4ZDAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJ0YXNrLW1hbmFnZXItYXBpLWNsaWVudCIsInNpZCI6Ijk2N2NiMjRjLTM5OTktNDEyNC1iZTE4LTQwNTc2MGZhMjExYyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXRhc2stbWFuYWdlci1hcGkiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsidGFzay1tYW5hZ2VyLWFwaS1jbGllbnQiOnsicm9sZXMiOlsiY2xpZW50LXVzZXIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6Ikpvb2QgVGVyeWFrZWUiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJqb29kIiwiZ2l2ZW5fbmFtZSI6Ikpvb2QiLCJmYW1pbHlfbmFtZSI6IlRlcnlha2VlIiwiZW1haWwiOiJub3Vyb3Rva2FAZ21haWwuY29tIn0.Gty5d-gU_u_TGXlEX5OuJubKjdcPN7yPJ31z9ygCXWe7BeYhkXZlYjz3VFMSneZtSirkhHatZr4Phc__TTMk-7h-iRK3hYI2OZpb7eON3pUCS001tBcHm7b8lNqJ-aKRCYm_253_LCGOdru9kQGgi2x2yV-LCjy0BaI-d66_fOaDzKLu2xSs_ePGuLR-0gSv79NauWDhEUg21CIs51fh5fwSzDEwatYeuUlkLdI5k8j0KJlB1Uhgve2eg4Ifduxn37sluGmUmInFeH4sZoM9LxG7GJ18NCFbJOAhiPGTyKRgT4duY4jglFvvUHlY4qvE8tKw5xDYk9rWE4TzTwjvFg\",\n    \"expires_in\": 300,\n    \"refresh_expires_in\": 1800,\n    \"refresh_token\": \"eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJmZGVlMWNmMS1mYzg1LTRiMDQtYTU4Mi0yODFlYzc0YTFhM2UifQ.eyJleHAiOjE3NDcwNTM1ODIsImlhdCI6MTc0NzA1MTc4MiwianRpIjoiZjZlMDg4ZWQtZmVlOS00ZWU5LTgxNDItZWQ1Njk4YWZjNjM0IiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy90YXNrLW1hbmFnZXItYXBpIiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL3JlYWxtcy90YXNrLW1hbmFnZXItYXBpIiwic3ViIjoiMTA4YzAyNjItM2RkZi00YzIzLWE1NmYtZTczOTYyZTU1OGQwIiwidHlwIjoiUmVmcmVzaCIsImF6cCI6InRhc2stbWFuYWdlci1hcGktY2xpZW50Iiwic2lkIjoiOTY3Y2IyNGMtMzk5OS00MTI0LWJlMTgtNDA1NzYwZmEyMTFjIiwic2NvcGUiOiJiYXNpYyBwcm9maWxlIGVtYWlsIGFjciByb2xlcyB3ZWItb3JpZ2lucyJ9.cWfi7LmiAptnIdxOBlb-Y7MZNCiFz27XZF4YuMsJvMljEKciuPOaT7n1zhPBSEHDLrL-8fKfla19UBWhH280mg\",\n    \"token_type\": \"Bearer\",\n    \"not-before-policy\": 0,\n    \"session_state\": \"967cb24c-3999-4124-be18-405760fa211c\",\n    \"scope\": \"profile email\"\n}"
+				}
+			]
+		},
+		{
+			"name": "create task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNOV9EdDcwYW1ycVZzSVZZWC1ndWw0eXBha2w2MmJSUEN1ZEJXdWRIRk5jIn0.eyJleHAiOjE3NDcwNDk3OTgsImlhdCI6MTc0NzA0OTQ5OCwianRpIjoib25ydHJvOmIzOGZmOWFhLTBkN2EtNGU1NS1hYmY0LTljNTljZjcyMDRmMyIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9yZWFsbXMvdGFzay1tYW5hZ2VyLWFwaSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkYjY4NmNlYS0xYzM3LTQzNTktYTY4Ni01YjgzYjE5YjZiZTAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJ0YXNrLW1hbmFnZXItYXBpLWNsaWVudCIsInNpZCI6Ijg1OTc5MjI2LTIzY2UtNGQxMi05M2E5LWIwOGEzOWI1ZjQ1YyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXRhc2stbWFuYWdlci1hcGkiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsidGFzay1tYW5hZ2VyLWFwaS1jbGllbnQiOnsicm9sZXMiOlsiY2xpZW50LXVzZXIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkRhbmlhIE5vdXJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiZGFuaWFub3VybyIsImdpdmVuX25hbWUiOiJEYW5pYSIsImZhbWlseV9uYW1lIjoiTm91cm8iLCJlbWFpbCI6Im5vdXJvZGFuaWFAZ21haWwuY29tIn0.t1eIkup9VuxejJZCQLgjJ8A0WNueUppWg3IsUSg-uANSBQ-migIHCHUHFKlVpey2fLVEJQ_thTpzX9anN2yyK5wFYvqP_w3FV3LmD8qTwFkdT3AHwFoWATcXJ3_NRB263K0pIu4owF80LdkEHspSPPXPosUH-9SzfwhExyky0_gNxjv7vrLjhya3y2X2D9xF0_s1LmSLa2ndSOOvhlF1poKZkb3_haDMPIKxGh_UDvoSvG7XeDtsZZm-rHEHW70eMJz6KVGICNpMZPzK2Mc-WqyPTWel7p2p1_vAIrCgXvCh_dci4L9eGy-7ffnsfCIlFbBgIGfqHT1Lf4q8LC7tZg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Test Task\",\r\n    \"description\":\"This is Task4\",\r\n    \"dueDate\": \"2025-06-01\",\r\n    \"status\": \"PENDING\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "create task-status:201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Test Task\",\r\n    \"description\":\"This is Task4\",\r\n    \"dueDate\": \"2025-06-01\",\r\n    \"status\": \"PENDING\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 May 2025 12:01:55 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"title\": \"Test Task\",\n    \"description\": \"This is Task4\",\n    \"status\": \"PENDING\",\n    \"dueDate\": \"2025-06-01\"\n}"
+				}
+			]
+		},
+		{
+			"name": "get All Tasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNOV9EdDcwYW1ycVZzSVZZWC1ndWw0eXBha2w2MmJSUEN1ZEJXdWRIRk5jIn0.eyJleHAiOjE3NDcwNDg0NTIsImlhdCI6MTc0NzA0ODE1MiwianRpIjoib25ydHJvOmQ0ZjVkZDk1LWVjYzYtNDRmZC04ODJmLWVhNGI1MDYwNTNhMyIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9yZWFsbXMvdGFzay1tYW5hZ2VyLWFwaSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkYjY4NmNlYS0xYzM3LTQzNTktYTY4Ni01YjgzYjE5YjZiZTAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJ0YXNrLW1hbmFnZXItYXBpLWNsaWVudCIsInNpZCI6IjM4NzhkY2JhLTdkZTYtNDJhYS04NGUyLTg5MjNlNjIxMjc0YiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXRhc2stbWFuYWdlci1hcGkiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsidGFzay1tYW5hZ2VyLWFwaS1jbGllbnQiOnsicm9sZXMiOlsiY2xpZW50LXVzZXIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkRhbmlhIE5vdXJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiZGFuaWFub3VybyIsImdpdmVuX25hbWUiOiJEYW5pYSIsImZhbWlseV9uYW1lIjoiTm91cm8iLCJlbWFpbCI6Im5vdXJvZGFuaWFAZ21haWwuY29tIn0.kg_zrYXiOYAlbiKMAj9OPxYnKpOVeIWrwkpb1F34mgSFFS8JJpuUvMFOX3MCozaHBvJIQ3_9NmvQor_Zb5whFX4OGNKmarl1x2CaV8Ofv491YAiPgnLYDePDCAyyWBnDJGFVsscsl61uYTgm1fomTo_xcTpB_qwekV7SfJWMcNCiD9t2mVSQCmDDSnTBIGEyQQkZfpSPMQtFx7t_wAhpW8Hb9CeoJmB1DUK-sc-KqCeKOr6aOOJv2e0MvEMalHhLIF6d6BgTyFVNOQw0817bJDYc9RLDdxGiVhqw8Mm8NXWyUgeXsBAcKomESJhGjevQjTibM2xs6exCcHGrg9K7UA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get All Tasks-status:200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 May 2025 11:09:58 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"title\": \"Test Task\",\n        \"description\": \"This is Task4\",\n        \"status\": \"PENDING\",\n        \"dueDate\": \"2025-06-01\"\n    },\n    {\n        \"id\": 2,\n        \"title\": \"Test Task\",\n        \"description\": \"This is Task4\",\n        \"status\": \"PENDING\",\n        \"dueDate\": \"2025-06-01\"\n    },\n    {\n        \"id\": 3,\n        \"title\": \"Test Task\",\n        \"description\": \"This is Task4\",\n        \"status\": \"PENDING\",\n        \"dueDate\": \"2025-06-01\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "get Task By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNOV9EdDcwYW1ycVZzSVZZWC1ndWw0eXBha2w2MmJSUEN1ZEJXdWRIRk5jIn0.eyJleHAiOjE3NDcwNDg5MzAsImlhdCI6MTc0NzA0ODYzMCwianRpIjoib25ydHJvOjkxYjNlNWY4LWY4YzEtNGIwNS04NTg0LTY3NmE2ZmMxNTVjZSIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9yZWFsbXMvdGFzay1tYW5hZ2VyLWFwaSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkYjY4NmNlYS0xYzM3LTQzNTktYTY4Ni01YjgzYjE5YjZiZTAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJ0YXNrLW1hbmFnZXItYXBpLWNsaWVudCIsInNpZCI6ImMzZjQzMTU4LTExYjktNDhkMC1iNzk3LTZjMmEzMzJkZThkZiIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXRhc2stbWFuYWdlci1hcGkiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsidGFzay1tYW5hZ2VyLWFwaS1jbGllbnQiOnsicm9sZXMiOlsiY2xpZW50LXVzZXIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkRhbmlhIE5vdXJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiZGFuaWFub3VybyIsImdpdmVuX25hbWUiOiJEYW5pYSIsImZhbWlseV9uYW1lIjoiTm91cm8iLCJlbWFpbCI6Im5vdXJvZGFuaWFAZ21haWwuY29tIn0.bNH-DyXCBqsot7OBmweJIyD6vrZ5uH9fOxAryIBfMp4gQIKvrhS6XROnJm6SGixxByDU5tcgMzGKDBwqhXz_yesEjS6alCYMCUkrOGPshIz9zrAkgmVhtjAjkUvbqUZgVxBoJlRjEJe_W3rWTKOrB_wyC3lpq_j8KnjWXHoBDSDRbLXubEzdT8O3c5vKD-3hbK9Un4GbaRmhCM0-C6qJG4G8nPbvaALuTxbOJzhJoCWtLAo6MsS6lhBap__5GTGTW6nLYYEbVFxuri8JnPIdx4gSoA3qgqvcXSt3EznONlsPa-adwZGQALCmAFyXhB6DwMO-ViFMKUvUjchXDvSy7w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"5"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "get Task By Id-status: 403",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"3"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 May 2025 11:16:22 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2025-05-12T14:16:22.4954098\",\n    \"status\": 403,\n    \"error\": \"Forbidden\",\n    \"message\": \"You are not authorized to access this task\",\n    \"path\": \"/api/v1/tasks/3\"\n}"
+				},
+				{
+					"name": "get Task By Id-status:200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 May 2025 11:17:27 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 3,\n    \"title\": \"Test Task\",\n    \"description\": \"This is Task4\",\n    \"status\": \"PENDING\",\n    \"dueDate\": \"2025-06-01\"\n}"
+				},
+				{
+					"name": "get Task By Id-status:400",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"5"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 May 2025 11:17:48 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2025-05-12T14:17:48.0899013\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"message\": \"Task with ID 5 not found\",\n    \"path\": \"/api/v1/tasks/5\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNOV9EdDcwYW1ycVZzSVZZWC1ndWw0eXBha2w2MmJSUEN1ZEJXdWRIRk5jIn0.eyJleHAiOjE3NDcwNDk3OTgsImlhdCI6MTc0NzA0OTQ5OCwianRpIjoib25ydHJvOmIzOGZmOWFhLTBkN2EtNGU1NS1hYmY0LTljNTljZjcyMDRmMyIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9yZWFsbXMvdGFzay1tYW5hZ2VyLWFwaSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkYjY4NmNlYS0xYzM3LTQzNTktYTY4Ni01YjgzYjE5YjZiZTAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJ0YXNrLW1hbmFnZXItYXBpLWNsaWVudCIsInNpZCI6Ijg1OTc5MjI2LTIzY2UtNGQxMi05M2E5LWIwOGEzOWI1ZjQ1YyIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXRhc2stbWFuYWdlci1hcGkiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsidGFzay1tYW5hZ2VyLWFwaS1jbGllbnQiOnsicm9sZXMiOlsiY2xpZW50LXVzZXIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkRhbmlhIE5vdXJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiZGFuaWFub3VybyIsImdpdmVuX25hbWUiOiJEYW5pYSIsImZhbWlseV9uYW1lIjoiTm91cm8iLCJlbWFpbCI6Im5vdXJvZGFuaWFAZ21haWwuY29tIn0.t1eIkup9VuxejJZCQLgjJ8A0WNueUppWg3IsUSg-uANSBQ-migIHCHUHFKlVpey2fLVEJQ_thTpzX9anN2yyK5wFYvqP_w3FV3LmD8qTwFkdT3AHwFoWATcXJ3_NRB263K0pIu4owF80LdkEHspSPPXPosUH-9SzfwhExyky0_gNxjv7vrLjhya3y2X2D9xF0_s1LmSLa2ndSOOvhlF1poKZkb3_haDMPIKxGh_UDvoSvG7XeDtsZZm-rHEHW70eMJz6KVGICNpMZPzK2Mc-WqyPTWel7p2p1_vAIrCgXvCh_dci4L9eGy-7ffnsfCIlFbBgIGfqHT1Lf4q8LC7tZg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Test Task\",\r\n    \"description\": \"This is Task4\",\r\n    \"dueDate\": \"2025-06-01\",\r\n    \"status\": \"IN_PROGRESS\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "update Task-status:200",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Test Task\",\r\n    \"description\": \"This is Task4\",\r\n    \"dueDate\": \"2025-06-01\",\r\n    \"status\": \"IN_PROGRESS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 May 2025 11:32:18 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"title\": \"Test Task\",\n    \"description\": \"This is Task4\",\n    \"status\": \"IN_PROGRESS\",\n    \"dueDate\": \"2025-06-01\"\n}"
+				},
+				{
+					"name": "update Task-status:403",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Test Task\",\r\n    \"description\": \"This is Task4\",\r\n    \"dueDate\": \"2025-06-01\",\r\n    \"status\": \"IN_PROGRESS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"1"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 May 2025 11:33:51 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2025-05-12T14:33:51.2023694\",\n    \"status\": 403,\n    \"error\": \"Forbidden\",\n    \"message\": \"You do not have access to this task\",\n    \"path\": \"/api/v1/tasks/1\"\n}"
+				},
+				{
+					"name": "update Task-status:404",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Test Task\",\r\n    \"description\": \"This is Task4\",\r\n    \"dueDate\": \"2025-06-01\",\r\n    \"status\": \"IN_PROGRESS\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"5"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 May 2025 11:34:16 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2025-05-12T14:34:16.4222439\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"message\": \"Task with ID 5 not found\",\n    \"path\": \"/api/v1/tasks/5\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJNOV9EdDcwYW1ycVZzSVZZWC1ndWw0eXBha2w2MmJSUEN1ZEJXdWRIRk5jIn0.eyJleHAiOjE3NDcwNTAzOTgsImlhdCI6MTc0NzA1MDA5OCwianRpIjoib25ydHJvOjU1MDMzYmZmLThkZmItNDM0NS1iYTBjLTJlMDc0MDQ3NjQ5YyIsImlzcyI6Imh0dHA6Ly9sb2NhbGhvc3Q6ODA4MC9yZWFsbXMvdGFzay1tYW5hZ2VyLWFwaSIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkYjY4NmNlYS0xYzM3LTQzNTktYTY4Ni01YjgzYjE5YjZiZTAiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJ0YXNrLW1hbmFnZXItYXBpLWNsaWVudCIsInNpZCI6ImNkNzc2OGQ4LTkxMjgtNGQzNC04ZTJmLWJhMzg0Y2VhNGY3YSIsImFjciI6IjEiLCJhbGxvd2VkLW9yaWdpbnMiOlsiaHR0cDovL2xvY2FsaG9zdDo4MDgxIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJkZWZhdWx0LXJvbGVzLXRhc2stbWFuYWdlci1hcGkiLCJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsidGFzay1tYW5hZ2VyLWFwaS1jbGllbnQiOnsicm9sZXMiOlsiY2xpZW50LXVzZXIiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSBlbWFpbCIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwibmFtZSI6IkRhbmlhIE5vdXJvIiwicHJlZmVycmVkX3VzZXJuYW1lIjoiZGFuaWFub3VybyIsImdpdmVuX25hbWUiOiJEYW5pYSIsImZhbWlseV9uYW1lIjoiTm91cm8iLCJlbWFpbCI6Im5vdXJvZGFuaWFAZ21haWwuY29tIn0.eH9kYXbBsBBmooZl5v_-JRWaka775k8zm6MKENd0HqG8u5oxHm0kVxypw41PLHTKf2QpQxKM1hdX9GHaRNeJ4PuvtPcYiqr_vMp4o26wrm00XTpmvm5fNe7YLMKPaALXZvZn87NymVSvOTojce1uwMQXGeTJR-tsM1_t79Vv3m4Akbw54b1-fiA7iWZ2BVk1KfW5O3bbx7P7w8wLDSBnSwKol6SuNdRGtP4rfjEuL43CiKfACEjOx5EVI7fk6OvZjqwycI_akL9vDKF8iIjbeC0wKJXaWXTyNOOA16QBEyCdHS5ARDlvkIgRsfONoBo7A46OWJg2ITQ7re7mULl9Aw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/tasks/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"tasks",
+						"6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete task-status::404",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"6"
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 May 2025 11:46:03 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2025-05-12T14:46:03.7875288\",\n    \"status\": 404,\n    \"error\": \"Not Found\",\n    \"message\": \"Task with ID 6 not found\",\n    \"path\": \"/api/v1/tasks/6\"\n}"
+				},
+				{
+					"name": "Delete task-status:204",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"2"
+							]
+						}
+					},
+					"status": "No Content",
+					"code": 204,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 May 2025 12:00:26 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": null
+				},
+				{
+					"name": "Delete task-status:403",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/api/v1/tasks/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"2"
+							]
+						}
+					},
+					"status": "Forbidden",
+					"code": 403,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "0"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, no-store, max-age=0, must-revalidate"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "Expires",
+							"value": "0"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 May 2025 12:09:54 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"timestamp\": \"2025-05-12T15:09:54.3344741\",\n    \"status\": 403,\n    \"error\": \"Forbidden\",\n    \"message\": \"You do not have access to this task\",\n    \"path\": \"/api/v1/tasks/2\"\n}"
+				}
+			]
+		}
+	]
+}
