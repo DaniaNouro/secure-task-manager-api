@@ -41,7 +41,7 @@ password=your-password
 
 You can test the API using the provided Postman collection:
 
-[Download Postman Collection](postman/task-manager.postman_collection.json)
+[Download Postman Collection](postman/task-managment.postman_collection.json)
 
 -------------------------------------------------------------------------
 
