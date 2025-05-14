@@ -114,3 +114,20 @@ One of the initial challenges was setting up the Docker environment along with K
 
 Lombok Issues
 Another challenge was related to Lombok, which caused issues with recognizing the constructors and methods in the code. Lombok was initially used to generate getters, setters, and constructors, but it caused some difficulties during development. As a result, I opted to manually implement getters and setters instead of relying on Lombok, which resolved the issue and made the codebase more straightforward to work with.
+-----------------------------------------------------------------------------------------------
+# Note
+
+Docker files have been added in another branch. Please check that branch for the latest updates regarding the Docker setup.
+
+## Docker Setup Explanation
+
+In this project, we have utilized Docker to create a consistent development and production environment. The following steps were taken to set up Docker:
+
+1. **Dockerfile Creation**: A Dockerfile was created to define the environment for the application. This file includes instructions on how to build the application image, including installing dependencies, setting environment variables, and specifying the command to run the application.
+
+2. **Docker Compose**: A docker-compose.yml file was created to manage multi-container applications. This file defines all the services required for our application, such as the web server and database. It allows us to easily configure and start all services with a single command.
+
+3. **Building and Running**: To build the Docker image, we used the command docker build -t <image-name> . in the directory containing the Dockerfile. To run the application and its services, we executed docker-compose up, which starts all defined services in the background.
+
+By using Docker, we ensure that our application runs consistently across different environments, simplifying deployment and reducing issues related to environment configuration.
+
